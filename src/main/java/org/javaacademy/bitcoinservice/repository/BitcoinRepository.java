@@ -1,6 +1,7 @@
 package org.javaacademy.bitcoinservice.repository;
 
 import org.javaacademy.bitcoinservice.dto.BitcoinDtoRs;
+import org.javaacademy.bitcoinservice.exception.IntegrationException;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;

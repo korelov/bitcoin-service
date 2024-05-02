@@ -9,11 +9,11 @@ import java.math.BigDecimal;
 public class CoindeskDtoRs {
     private Bpi bpi;
 
-    public class Bpi {
+    public static class Bpi {
         @JsonProperty("USD")
         public USD usd;
 
-        public class USD {
+        public static class USD {
             public String code;
             public String symbol;
             public String rate;
