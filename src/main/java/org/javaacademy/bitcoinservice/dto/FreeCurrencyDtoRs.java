@@ -7,7 +7,5 @@ import java.util.Map;
 
 @Data
 public class FreeCurrencyDtoRs {
-    private Map<String, BigDecimal> stringBigDecimalMap;
-
-
+    private Map<String, BigDecimal> data;
 }

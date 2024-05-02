@@ -5,12 +5,10 @@ import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
-@ConfigurationProperties(prefix = "integration.freecurrency")
+@ConfigurationProperties(prefix = "integration.coindesk")
 @Getter
 @Configuration
 @Setter
-public class FreeCurrencyProperties {
+public class CoinDeskProperties {
     private String baseUrl;
-    private String token;
-    private String headertokenname;
 }

@@ -3,10 +3,10 @@ package org.javaacademy.bitcoinservice.dto;
 import lombok.Value;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 @Value
 public class BitcoinDtoRs {
-    String CurrencyName;
-    BigDecimal amount;
-    BigDecimal rate;
+    LocalDateTime requestTime;
+    BigDecimal rublesCost;
 }

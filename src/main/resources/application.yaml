@@ -3,3 +3,6 @@ integration:
     header-token-name: apiKey
     token: fca_live_KK2DcGIrxy4jXdBTGwRT943i5YBTNVCcB3CWHzdZ
     base-Url: https://api.freecurrencyapi.com/v1/
+
+  coindesk:
+    base-Url: https://api.coindesk.com/v1/bpi/currentprice.json
