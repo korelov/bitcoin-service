@@ -1,7 +1,7 @@
 package org.javaacademy.bitcoinservice.service;
 
 import lombok.RequiredArgsConstructor;
-import org.javaacademy.bitcoinservice.dto.BitcoinDtoRs;
+import org.javaacademy.bitcoinservice.dto.BitcoinDto;
 import org.javaacademy.bitcoinservice.repository.BitcoinRepository;
 import org.springframework.stereotype.Service;
 
@@ -18,18 +18,18 @@ public class BitcoinService {
     private final BitcoinRepository bitcoinRepository;
 
 
-    public BitcoinDtoRs getBitcoinRubCost() {
+    public BitcoinDto getBitcoinRubCost() {
         BigDecimal dollarOfRubles =
                 freeCurrencyIntegrationService.getFreeCurrencyDtoRs().getData().get(RUB);
         BigDecimal bitcoinOfDollar =
                 coinDeskIntegrationService.getCoindeskDtoRs().getBpi().usd.rate_float;
         BigDecimal rubCost = bitcoinOfDollar.multiply(dollarOfRubles);
-        BitcoinDtoRs bitcoinRub = new BitcoinDtoRs(LocalDateTime.now(), rubCost);
+        BitcoinDto bitcoinRub = new BitcoinDto(LocalDateTime.now(), rubCost);
         bitcoinRepository.add(bitcoinRub);
         return bitcoinRub;
     }
 
-    public LinkedList<BitcoinDtoRs> getAll() {
+    public LinkedList<BitcoinDto> getAll() {
         return bitcoinRepository.getAll();
     }
 

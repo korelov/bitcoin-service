@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Value
-public class BitcoinDtoRs {
+public class BitcoinDto {
     LocalDateTime requestTime;
     BigDecimal rublesCost;
 }

@@ -1,7 +1,7 @@
 package org.javaacademy.bitcoinservice.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.javaacademy.bitcoinservice.dto.BitcoinDtoRs;
+import org.javaacademy.bitcoinservice.dto.BitcoinDto;
 import org.javaacademy.bitcoinservice.service.BitcoinService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,12 +17,12 @@ public class BitcoinController {
     private final BitcoinService bitcoinService;
 
     @GetMapping("/now")
-    public BitcoinDtoRs getBitcoinRubCost() {
+    public BitcoinDto getBitcoinRubCost() {
         return bitcoinService.getBitcoinRubCost();
     }
 
     @GetMapping("/history")
-    public LinkedList<BitcoinDtoRs> getAll() {
+    public LinkedList<BitcoinDto> getAll() {
         return bitcoinService.getAll();
     }
 
