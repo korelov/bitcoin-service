@@ -2,14 +2,12 @@ package org.javaacademy.bitcoinservice.service;
 
 import lombok.RequiredArgsConstructor;
 import org.javaacademy.bitcoinservice.dto.BitcoinDtoRs;
-import org.javaacademy.bitcoinservice.dto.FreeCurrencyDtoRs;
 import org.javaacademy.bitcoinservice.repository.BitcoinRepository;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.LinkedList;
-import java.util.Map;
 
 @Service
 @RequiredArgsConstructor

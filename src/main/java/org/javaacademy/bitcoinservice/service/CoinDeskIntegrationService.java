@@ -3,7 +3,6 @@ package org.javaacademy.bitcoinservice.service;
 import lombok.RequiredArgsConstructor;
 import org.javaacademy.bitcoinservice.config.CoinDeskProperties;
 import org.javaacademy.bitcoinservice.dto.CoindeskDtoRs;
-import org.javaacademy.bitcoinservice.dto.FreeCurrencyDtoRs;
 import org.javaacademy.bitcoinservice.exception.IntegrationException;
 import org.springframework.http.RequestEntity;
 import org.springframework.stereotype.Service;
