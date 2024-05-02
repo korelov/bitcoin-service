@@ -1,0 +1,5 @@
+integration:
+  freecurrency:
+    header-token-name: apiKey
+    token: fca_live_KK2DcGIrxy4jXdBTGwRT943i5YBTNVCcB3CWHzdZ
+    base-Url: https://api.freecurrencyapi.com/v1/
